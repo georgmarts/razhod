@@ -2,15 +2,22 @@ const { useState, useEffect, useContext, useRef } = React;
 
 function App() {
     
-    fetch('https://api.github.com/repos/georgmarts/razhod/issues?access_token=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', {
-    method: 'post',
+fetch('https://api.github.com/repos/georgmarts/razhod/contents/file.txt', {
+    method: 'put',
+    headers: {
+        "Content-Type" : "application/vnd.github.v3+json",
+        "Authorization" : "token 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"
+       },
     body: {
-      title: 'Title',
-      body: {body: "body", title: "title"}
-    }
+        "message": "my commit message",
+        "committer": {
+          "name": "My name",
+          "email": "my email"
+        },
+        "content": "base64encoded"
+      }
   })
-
-
+    
     const LOCAL_STORAGE_KEY = 'expensesApp.expenses'
 
     const [userInput, setUserInput] = useState('')
