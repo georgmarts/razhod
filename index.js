@@ -6,7 +6,7 @@ fetch('https://api.github.com/repos/georgmarts/razhod/contents/file.txt', {
     method: 'put',
     headers: {
         "Content-Type" : "application/vnd.github.v3+json",
-        "Authorization" : "token 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"
+        "Authorization" : "token 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"
        },
     body: {
         "message": "my commit message",
