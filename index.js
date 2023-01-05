@@ -1,6 +1,15 @@
 const { useState, useEffect, useContext, useRef } = React;
 
 function App() {
+    
+    fetch('https://api.github.com/repos/organization/repo/issues?access_token=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', {
+    method: 'post',
+    body: {
+      title: 'Title',
+      body: {body: "body", title: "title"}
+    }
+  })
+
 
     const LOCAL_STORAGE_KEY = 'expensesApp.expenses'
 
