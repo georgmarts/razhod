@@ -115,7 +115,7 @@ return <main>
             <button onClick={()=>handleExpenseDelete(thisId)}>delete</button>
             </div>})}
         <h1>{sum}</h1>
-        <h1>Expenses for January: {sumPerMonth}</h1>
+        <h1>Expenses for January(new): {sumPerMonth}</h1>
         </>
     
     </section>
