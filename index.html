@@ -1,37 +1,24 @@
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://unpkg.com/react@18.2.0/umd/react.development.js'></script>
+    <script src='https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js'></script>
+    <script src='https://unpkg.com/@babel/standalone@7.2.0/babel.min.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Калькулятор расходов</title>
+</head>
+<body>
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-body {
-    display: grid;
-    padding: 30px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 2em;
-}
-
-.total-container {
-    display: grid;
+    <div id="root"></div>
     
-}
+    <script data-plugins="transform-modules-umd" type="text/babel" data-presets="react" data-type="module" src="index.js"></script>
 
-.circle {
-    margin: auto;
-    width: 80px;
-    height:80px;
-    line-height: 80px;
-    border-radius: 50%;
-    color: white;
-    background-color: brown;
-}
 
-main {
-}
+</body>
+</html>
